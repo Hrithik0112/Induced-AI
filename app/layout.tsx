@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/section/Header";
+import { Footer } from "@/components/section/Footer";
 
 const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urban" });
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} font-sans`}>{children}</body>
+      <body className={`${urbanist.variable} font-sans`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
