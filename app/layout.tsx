@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Syne, Urbanist } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/section/Header";
 import { Footer } from "@/components/section/Footer";
 
 const urbanist = Urbanist({ subsets: ["latin"], variable: "--font-urban" });
+const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} font-sans`}>
+      <body className={`${urbanist.variable} ${syne.variable} font-sans`}>
         <Header />
         {children}
         <Footer />
