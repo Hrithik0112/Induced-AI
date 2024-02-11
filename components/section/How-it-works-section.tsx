@@ -1,3 +1,36 @@
 export const HowItWorks = () => {
-  return <div className="font-bold text-5xl">How it works here.</div>;
+  return (
+    <div className="w-full max-w-[1392px] px-5">
+      <section className="py-24 h-full">
+        <div className="w-full flex justify-between items-center">
+          <div></div>
+          <div className="w-[48%] ml-3 border border-white/10 rounded-3xl">
+            AUTOMATE & DELEGATE TO INDUCED
+          </div>
+        </div>
+        <div className="w-full h-full mt-5 grid grid-cols-2 justify-between items-center gap-10 ">
+          <div id="table-content" className="bg-medium-blue text-white ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+          <div id="table-data" className="bg-white text-black ">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
+
+// auto-cols-fr auto-rows-auto have to used it grid line gap-8 px-8
