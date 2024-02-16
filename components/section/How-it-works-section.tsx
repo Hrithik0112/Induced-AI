@@ -16,12 +16,18 @@ export const HowItWorks = () => {
         <div className="w-full h-full mt-5 grid grid-cols-2 place-items-center">
           <div
             id="table-content"
-            className="w-[45%] h-[600px] ml-3 bg-medium-blue text-white block overflow-hidden relative "
+            className="w-[45%] h-[600px] ml-3 block overflow-hidden relative "
           >
-            <div className="h-full opacity-10">
+            <div className="h-full">
               <DescribeSVG className="hidden" />
+            </div>
+            <div className="h-full">
               <AuthenticationSVG className="hidden" />
+            </div>
+            <div className="h-full">
               <WorkflowSVG className="hidden" />
+            </div>
+            <div className="h-full">
               <NotificationSVG />
             </div>
           </div>
